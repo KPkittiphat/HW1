@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — ชื่อของคุณ</title>
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">Kittiphat</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="card intro">
+          <h1>Hello My Name's Kittiphat Phengnamkham</h1>
+          <p>นักพัฒนาเว็บ / นักออกแบบ UI-UX ที่ชอบทำงานเรียบง่าย อ่านง่าย และเน้นผลลัพธ์ สามารถสร้างเว็บไซต์ portfolio, landing page และระบบ frontend ที่ตอบโจทย์ธุรกิจ</p>
+          <div class="cta">
+            <a class="btn" href="#projects">ดูผลงาน</a>
+            <a class="btn ghost" href="#contact">ติดต่อ</a>
+          </div>
+        </div>
+
+        
+      </div>
+
+      <section id="about">
+        <div class="card">
+          <h2>เกี่ยวกับผม/ฉัน</h2>
+          <p style="color:var(--muted);margin-top:8px">
+            มีประสบการณ์ในการพัฒนาเว็บด้วย HTML และออกแบบ UI ที่เน้นประสบการณ์ผู้ใช้ หากต้องการผลงานตัวอย่างเพิ่มเติม สามารถติดต่อเพื่อรับลิงก์หรือไฟล์ตัวอย่างได้
+          </p>
+        </div>
+      </section>
+
+   
+
+      <section id="skills">
+        <h2 style="margin-top:18px">ทักษะ</h2>
+        <div class="card" style="margin-top:10px">
+          <div class="skills">
+            <span class="skill">HTML</span>
+            <span class="skill">Responsive Design</span>
+            <span class="skill">UI Design</span>
+           
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2 style="margin-top:18px">ติดต่อ</h2>
+        <div class="card" style="margin-top:10px;display:flex;flex-direction:column;gap:12px">
+          <p style="color:var(--muted);margin:0">สนใจทำงานร่วมกันหรือขอไฟล์ตัวอย่าง โปรดส่งอีเมลหรือคลิกปุ่มด้านล่าง</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn" href="mailto:your.email@example.com">ส่งอีเมล</a>
+            <a class="btn ghost" href="mailto:your.email@example.com?subject=งาน%20ร่วมกัน">ขอรายละเอียดเพิ่มเติม</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Kittiphat
+    </footer>
+  </div>
+
+  <!-- small inline script to set year is optional, but it's pure HTML file - remove if strictly no JS -->
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
